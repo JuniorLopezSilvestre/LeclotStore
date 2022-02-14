@@ -30,11 +30,11 @@ html{
     }
 
     @include response(md) {
-        font-size: 47.25%;
+        font-size: 100%;
     }
 
     @include response(sm) {
-        font-size: 47.25%;
+        font-size: 100%;
     }
 }
 
