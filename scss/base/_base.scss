@@ -55,10 +55,15 @@ html{
 
 /**/
 
-.containner  {
+.containner {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-gap: 5%;
+
+    @include response(lg){
+        display: block;
+        
+    }
 }
 
 #blog {

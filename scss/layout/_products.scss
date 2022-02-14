@@ -218,12 +218,12 @@ div.text-muted {
     width: 100%;
     display: flex;
     &-blog{  
-    box-shadow: 2px 2px 14px rgb(190, 190, 190);
-    height: 80%;
-    width: 100%;
+        box-shadow: 2px 2px 14px rgb(190, 190, 190);
+         height: 80%;
+         width: 100%;
 
     @include response(xl){
-        height: 90%;
+        height: 95%;
         }
 
         @include response(lg){
@@ -671,21 +671,23 @@ div.text-muted {
     opacity: .24;
     height: 65%;
 
+    @include response(xl){
+     bottom: 0%;
+     height: 60%;
+    }
+    
+    @include response(md){
+        bottom: -3%;
+        height: 36%;
+    }
+    
     @include response(sm){
         bottom: 0%;
         height: 30%;
-       }
-
-       @include response(md){
-        bottom: -3%;
-        height: 36%;
-       }
-       
-       @include response(xl){
-        bottom: 0%;
-        height: 60%;
-       }
     }
+}
+    
+       
 
     .bg-imge{
         background-image: url(../images/img1.jpg);
