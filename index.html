@@ -40,8 +40,8 @@
                           <li class="nav-item first-nav-item">
                             <a class="nav-link first-nav-link" href="sign-in.html"> Sign In</a>
                           </li>                          
-                          <li class="nav-item first-nav-item dropdown">
-                            <a class="nav-link first-nav-link dropdown-toggle" href="cart.html" role="button">
+                          <li class="nav-item first-nav-item">
+                            <a class="nav-link first-nav-link" href="cart.html" id="navbarDropdown" role="button">
                                 <span class="fas fa-shopping-cart"></span>
                             </a>
                           </li>
@@ -50,7 +50,7 @@
             </div>
 
             <div class="heading">
-                <h1 class="heading-text">Momo´s Store</h1>
+                <h1 class="heading-text"><a class="title-link" href="index.html"> Momo´s Store</a></h1>
             </div>
             <div class="second-nav">
                 <nav class="navbar navbar-expand-lg">
@@ -142,7 +142,7 @@
                     <div class="product-description">
                         <h2 class="product-description-heading">Dress</h2>
                         <p class="product-description-price">Price: <span>$150</span></p>
-                        <a href="#" class="product-description-bton">Buy Now </a>
+                        <a href="product-detail.html" class="product-description-bton">Buy Now </a>
                     </div>
                 </div>
                 
@@ -151,7 +151,7 @@
                     <div class="product-description">
                         <h2 class="product-description-heading">Pants</h2>
                         <p class="product-description-price">Price: <span>$100</span></p>
-                        <a href="#" class="product-description-bton">Buy Now </a>
+                        <a href="product-detail.html" class="product-description-bton">Buy Now </a>
                     </div>
                 </div>
                 
@@ -160,7 +160,7 @@
                     <div class="product-description">
                         <h2 class="product-description-heading">Shirt</h2>
                         <p class="product-description-price">Price: <span>$50</span></p>
-                        <a href="#" class="product-description-bton">Buy Now </a>
+                        <a href="product-detail.html" class="product-description-bton">Buy Now </a>
                     </div>
                 </div>
             </div>
@@ -181,10 +181,10 @@
          <!----2nd products---->
         <section class="productos">
             <div class="contain contain_productos">
-              <div>
-                <h2 class="title animated infinite pulse">POPULAR NOW</h2>
-                <p class="title-text">The most popular clothes in the store!</p>
-              </div>
+                <div class="products-heading">
+                    <h1 class="products-heading-text">Popular Now</h1>
+                    <p class="title-text">The most popular clothes in the store!</p>    
+                </div>
                 <div class="categories">
                     <ul class="prduts">
                         <li class="varios">MATERNITY</li>
@@ -193,55 +193,75 @@
                         <li class="varios">LOW PRICES</li>
                     </ul>
                 </div>
-                <div class="containt-cards">
-                <a href="" class="cards shadow">
-                    <div class="img-container">
-                        <img class="img-description" src="images/sweater.png" alt="sweatermen" />
-                    </div>
-                    <div class="cards-text">
-                        <div class="text-container">
-                        <h2 class="text-name">Tennis Forum Low / Men</h2>
-                        <h3 class="text-price">$200</h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="cards shadow">
-                    <div class="img-container">
-                        <img class="img-description" src="images/sweater1.png" alt="sweatermen" />
-                    </div>
-                    <div class="cards-text">
-                        <div class="text-container">
-                        <h2 class="text-name">Tennis New Eve / Men</h2>
-                        <h3 class="text-price">$280</h3>
-                        </div>
-                    </div>
-                </a>
-                
-                 <a href="" class="cards shadow">
-                        <div class="img-container">
-                            <img class="img-description" src="images/pants.png" alt="pantsmen" />
-                        </div>
-                        <div class="cards-text">
-                            <div class="text-container">
-                            <h2 class="text-name">Sport White / Men</h2>
-                            <h3 class="text-price">$170</h3>
+            </div>
+            <div class="container mt-3 mb-5 section-shop">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                        <div class="card"><a href="product-detail.html"><img class="card-img-top" src="./images/peru.png"></a>
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                            <div class="d-flex flex-column">
+                                <div class="h6 font-weight-bold">Shirt FPF PERU</div>
+                                <div class="text-muted">$120</div>
+                            </div>
+                            <div class="btn"><span class="far fa-heart"></span></div>
                             </div>
                         </div>
-                </a>
-                <a href="" class="cards shadow">
-                    <div class="img-container">
-                        <img class="img-description" src="images/pants.png" alt="pantsmen" />
-                    </div>
-                    <div class="cards-text">
-                        <div class="text-container">
-                        <h2 class="text-name">Sport White / Men</h2>
-                        <h3 class="text-price">$170</h3>
                         </div>
                     </div>
-                 </a>
+                    <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                        <div class="card"><a href="product-detail.html"><img class="card-img-top" src="./images/abrigo .png"></a>
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                            <div class="d-flex flex-column">
+                                <div class="h6 font-weight-bold">Women Coat Unique</div>
+                                <div class="text-muted">$155</div>
+                            </div>
+                            <div class="btn"><span class="far fa-heart"></span></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                        <div class="card"><a href="product-detail.html"><img class="card-img-top" src="./images/blusa.png"></a>
+                        <div class="card-body">
+                            <div class="d-flex align-items-start justify-content-between">
+                            <div class="d-flex flex-column">
+                                <div class="h6 font-weight-bold">Dress Tomato</div>
+                                <div class="text-muted">$150</div>
+                            </div>
+                            <div class="btn"><span class="far fa-heart"></span></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                        <div class="card"><a href="product-detail.html"><img class="card-img-top" src="./images/conjunto.png"></a>
+                        <div class="card-body">
+                        <div class="d-flex align-items-start justify-content-between">
+                            <div class="d-flex flex-column">
+                                <div class="h6 font-weight-bold">Dress Amphora</div>
+                                <div class="text-muted">$153</div>
+                            </div>
+                            <div class="btn"><span class="far fa-heart"></span></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section> 
+            <div class="products-bton">
+                <a href="/shop.html" class="bton">
+                    <div class="bton-bg"></div>
+                        <div class="arrow">
+                            <div class="arrow-line arrow-line-1"></div>
+                            <div class="arrow-line arrow-line-2"></div>
+                            <div class="arrow-line arrow-line-3"></div>
+                        </div>
+                        <span class="bton-text">Clothes</span>
+                </a>
+            </div>
+        </section>
          <!----end of 2nd products---->
 
          <!----footer---->

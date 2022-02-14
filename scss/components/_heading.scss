@@ -1,3 +1,6 @@
+
+
+
 .heading {
     grid-column: 1/ 10 ;
     grid-row: 2 / 3;
@@ -8,7 +11,11 @@
         font-size: size(xl)*2;
         font-weight: lighter;
         letter-spacing: 0.5rem;
-
+    }
+    .title-link{
+        color: #333!important;
+        text-decoration: none;
+    }
 
         @include response(md){
             font-size: 5rem;      
@@ -18,4 +25,3 @@
             font-size: 3.74rem;      
         }
     }
-}

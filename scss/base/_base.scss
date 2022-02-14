@@ -5,6 +5,23 @@
 
 html{
     font-size: 62.5%;
+    ::selection {
+        color: #ffffff;
+        background: #2e2e2d;
+    }
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    ::-webkit-scrollbar {
+        width: 13px;
+        background-color: #020101;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: map-get($map: $pallete, $key:dark );
+        border: map-get($map: $pallete, $key:border );
+    }
     body{
         margin: 0!important;
         padding: 0;

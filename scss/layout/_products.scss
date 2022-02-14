@@ -27,8 +27,7 @@
 
     &-text {
         text-align: center;
-        font-size: size(lg) + 3rem ;
-        font-weight: 600;
+        font-size: size(lg) + 2rem ;
         color: color(primary);
         }
     }
@@ -109,7 +108,7 @@
         &-bton{
             font-size: size(xs);
             text-decoration: none;
-            color: color(quaternary);
+            color: color(quaternary)!important;
             display: block;
             padding: .5rem 1rem;
             border: .1rem solid color(quaternary);
@@ -257,7 +256,7 @@ div.text-muted {
     }
     
     &-name{
-        font-size: size(lg) + 4rem ;
+        font-size: size(lg) + 2rem ;
     }
 }
 
@@ -493,6 +492,13 @@ div.text-muted {
 .ourteam-img{
     width: 17%;
     margin: auto;
+
+    @include response(sm){
+        .ourteam-img {
+            width: 50%;
+            padding: 6% 8%;
+        }
+    }
 }
 
 
@@ -590,14 +596,6 @@ div.text-muted {
 
 
     .productos {
-        position: relative;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        @include displaystandar;
-        align-items: center;
-        flex-wrap: wrap;
         padding-top: 40px;
         padding-bottom: 40px;
         grid-row: 4/4;
@@ -665,7 +663,7 @@ div.text-muted {
     }
 
     .bg-imge{
-        background-image: url(/images/img1.jpg);
+        background-image: url(../images/img1.jpg);
         width: 100%;
         background-attachment: fixed;
         background-size: cover;
