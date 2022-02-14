@@ -654,6 +654,15 @@ div.text-muted {
        width: 50%;
        height: 80%;
        padding: 100px 0px;
+
+       @include response(sm){
+        padding: 160px 0px 0px 0px;
+       }
+
+       @include response(md){
+        padding: 120px 0px 0px 0px;
+       }
+
     }
     .about-bg2{ 
     position: absolute;
@@ -661,6 +670,21 @@ div.text-muted {
     width: 50%;
     opacity: .24;
     height: 65%;
+
+    @include response(sm){
+        bottom: 0%;
+        height: 30%;
+       }
+
+       @include response(md){
+        bottom: -3%;
+        height: 36%;
+       }
+       
+       @include response(xl){
+        bottom: 0%;
+        height: 60%;
+       }
     }
 
     .bg-imge{
