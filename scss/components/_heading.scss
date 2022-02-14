@@ -1,0 +1,21 @@
+.heading {
+    grid-column: 1/ 10 ;
+    grid-row: 2 / 3;
+    text-align: center;
+
+    &-text {
+        font-family: "Great Vibes";
+        font-size: size(xl)*2;
+        font-weight: lighter;
+        letter-spacing: 0.5rem;
+
+
+        @include response(md){
+            font-size: 5rem;      
+        }
+
+        @include response(sm){
+            font-size: 3.74rem;      
+        }
+    }
+}

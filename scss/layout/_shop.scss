@@ -1,0 +1,108 @@
+.section-shop{
+    grid-column: 1 /-1;
+    font-size: 1.65rem;
+    .results {
+        font-weight: 600
+      }
+
+      select {
+        border: none;
+        outline: none;
+        padding: 0px 4px;
+        cursor: pointer;
+        background: inherit
+      }
+
+      .card {
+        border: none;
+        cursor: pointer
+      }
+
+      .card:hover {
+        transform: scale(1.04);
+        transition: all 0.4s ease-in-out;
+      }
+
+      img {
+        background-color: #fdf8f4;
+        height: 220px;
+        object-fit: contain;
+        padding-top: 10px
+      }
+
+      .card-body {
+        padding: 0.5rem;
+        padding-top: 0.7rem;
+        padding-right: 0.2rem
+      }
+
+      .fa-heart {
+        font-size: 2.7rem;
+
+        @include response(xl){
+          font-size: 2.7rem;
+        }
+
+        @include response(lg){
+          font-size: 2.7rem;
+        }
+
+        @include response(md){
+          font-size: 3.2rem;
+        }
+
+        @include response(sm){
+          font-size: 3.2rem;
+        }
+      }
+
+      .h6 {
+        margin: 0;
+        font-size: 1.55rem;
+
+        @include response(md){
+          font-size: 2.55rem;
+        }
+      }
+
+      .bton {
+        padding-top: 0
+      }
+
+      .bton:hover {
+        color: #fdaa4b
+      }
+
+      div.text-muted {
+        font-size: 1.5rem;
+
+        @include response(md){
+          font-size: 2.5rem;
+        }
+      }
+
+      @media(max-width:372px) {
+        .results {
+          font-size: 0.9rem
+        }
+      }
+
+      @media(max-width:330px) {
+        .results {
+          font-size: 0.85rem
+        }
+      }
+
+      @media(min-height: 700px) {
+        body {
+          height: 100vh
+        }
+      }
+
+      @media(max-width:768px) {
+        body {
+          height: 100%
+        }
+      }
+}
+

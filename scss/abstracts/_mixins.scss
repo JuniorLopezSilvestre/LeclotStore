@@ -1,0 +1,95 @@
+@mixin navigation {
+    &-list{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height:100% ;
+        width: 100%;
+         }
+
+    &-item {
+        list-style: none;
+    }
+
+    &-link{
+        color:color(primary)!important;
+        text-decoration: none;
+        font-size: size(sm);
+
+        &:hover {
+            color:lighten(color(primary),40%);
+        }
+    }
+}
+
+@mixin flexPosition($justCont: center, $alignIte:center) {
+    display: flex;
+    justify-content: $justCont;
+    align-items: $alignIte;
+}
+
+@mixin footerList {
+    padding-left: 0;
+    
+    &-heading {
+        font-size: size(lg);
+        color: color(primary);
+    }
+
+    &-item {
+        list-style: none;
+        margin: 1rem 0;
+    }
+        &-link{
+            font-size: size(xs);
+            text-decoration: none;
+            color: lighten(color(primary),15%);
+            transition: color .2s;
+
+            &:hover{
+                color: lighten(color(primary),35%)
+            }
+        }
+  }
+
+  @mixin response($breakpoint){
+      @if($breakpoint == xl ){
+        @media(max-width: 1024px){
+            @content;
+         }
+      }
+
+      @if($breakpoint == lg ){
+        @media(max-width: 768px){
+            @content;
+         }
+      }
+
+      @if($breakpoint == md ){
+        @media(max-width: 425px){
+            @content;
+         }       
+      }
+
+      @if($breakpoint == sm ){
+        @media(max-width: 375px){
+            @content;
+         }       
+      }
+  }
+
+  $pallete:(
+    "dark":#000,
+    "blank":#fff,
+    "border": 1px solid #000000,);
+
+    $color-transparent:transparent;
+
+    @mixin display100 {
+        display: flex;
+        width: 100%;
+    }
+    @mixin displaystandar {
+        display: flex;
+        justify-content: center;   
+}
